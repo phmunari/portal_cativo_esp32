@@ -1,6 +1,6 @@
 # Portal cativo com ESP32
 
-Projeto didático para criar um ponto de acesso Wi-Fi com um ESP32 e exibir uma página HTML hospedada no próprio dispositivo. O portal serve uma página local e não coleta credenciais nem fornece acesso à internet.
+Projeto didático para criar um ponto de acesso Wi-Fi com um ESP32 e exibir uma página HTML hospedada no próprio dispositivo. O portal serve uma página local e não coleta credenciais nem fornece acesso à internet. Porém foi criado para um trabalho demonstrativo de Cybersegurança, com o objetivo de se passar por uma página de phising. Há algumas imagens no repositório do projeto, caso queira conferir.
 
 ## Requisitos
 
@@ -29,11 +29,11 @@ O ESP32 responde às requisições DNS dos clientes com seu endereço local e ex
 
 ## Segurança e privacidade
 
-Use o projeto em dispositivos e redes sob sua responsabilidade. Identifique a página como parte de um laboratório, não imite páginas de serviços de terceiros e não solicite ou armazene senhas ou outros dados pessoais.
+Use o projeto em dispositivos e redes sob sua responsabilidade.** Identifique a página como parte de um laboratório**, não imite páginas de serviços de terceiros e não solicite ou armazene senhas ou outros dados pessoais.
 
 ## Solução de problemas
 
-- **Erro de tipo no SSID:** declare a variável como string, por exemplo `const char* ssid = "nome_da_wif";`.
+- **Erro de tipo no SSID:** declare a variável como string, por exemplo `const char* ssid = "nome_da_wifI";`.
 - **Página não aparece automaticamente:** alguns sistemas não abrem portais cativos automaticamente. Acesse `http://192.168.4.1` manualmente.
 - **HTML não compila:** confira se os delimitadores `R"HTML(` e `)HTML"` estão presentes e se o delimitador `HTML` não aparece dentro do conteúdo da página.
 - **Biblioteca `WiFi.h`:** use a fornecida pelo pacote de placas ESP32 selecionado na Arduino IDE.
